@@ -14,3 +14,35 @@ reaper -h
         并发数 (default 100)
 ```
 
+#### 0x03 reaper.json数据格式说明
+```shell
+{
+    "fp": "fingerprint-name",  // 匹配指纹名
+    "headers": [],             // 匹配响应头中的数据
+    "body": [],                // 匹配响应体中的数据
+    "icon": [],                // 匹配mmh3-icon指纹或md5-icon指纹，例："icon": ["-123456789", "a794712345601f2247921cf4c2b99a78"], 
+    "js": [],                  // 匹配响应数据中的js文件名，例："js": ["jquery.js"],   
+    "title": [],               // 匹配响应页面的标题
+    "regexp": "true"           // 是否是用正则匹配
+}
+```
+
+icon的匹配逻辑是"或"，其余项的匹配逻辑是"与"，整体的匹配逻辑是"与" 
+
+例：
+```shell
+{
+    "fp": "fp-name",
+    "headers": [],
+    "body": [],
+    "icon": ["-123456789", "a794712345601f2247921cf4c2b99a78"],
+    "js": [],
+    "title": [
+        "abcd",
+    ],
+    "regexp": "true"
+}
+```
+icon只需满足其中之一则icon为true，若再次满足title条件，则title为true，最终结果为：icon && title --> fp-name
+
+
