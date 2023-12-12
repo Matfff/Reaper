@@ -3,7 +3,7 @@
 #### 0x00 简介
 Reaper是一款基于go语言开发的指纹扫描器，可以对响应数据中的headers、body、mmh3-icon、md5-icon、js、title进行扫描识别，擅长于对大量数据进行批量扫描，经过测试可以很好的完成百万级别数据量的指纹扫描。reaper.json中有近30000条指纹数据。  
 
-Reaper可识别mmh3-icon和md5-icon两种加密类型，可以通过设置regexp的值来开始是否使用正则进行规则匹配，可以很好的兼容其他指纹库中的指纹数据。
+Reaper可识别mmh3-icon和md5-icon两种加密类型，通过设置regexp的值来开始是否使用正则进行规则匹配，可以很好的兼容其他指纹库中的指纹数据。
 
 #### 0x01 用法
 下载最新版的可执行文件：[Reaper](https://github.com/xxxxfang/Reaper/releases)  
