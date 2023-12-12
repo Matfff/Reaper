@@ -1,9 +1,9 @@
 # Reaper
 
-#### 0x01. 简介
-Reaper是一款基于go语言开发的指纹扫描器，可以对响应数据中的headers、body、mmh3-icon、md5-icon、js、title进行扫描识别，擅长于对大量数据进行批量扫描，经过测试可以很好的完成百万级别数据量的指纹扫描。指纹库reaper.json中有近30000条指纹数据，是从github上其他指纹库提取、收集出来的。指纹收集目前只完成了一部分，后续将会继续追加指纹库数据。
+#### 0x00 简介
+Reaper是一款基于go语言开发的指纹扫描器，可以对响应数据中的headers、body、mmh3-icon、md5-icon、js、title进行扫描识别，擅长于对大量数据进行批量扫描，经过测试可以很好的完成百万级别数据量的指纹扫描。reaper.json中有近30000条指纹数据。
 
-#### 0x02 用法
+#### 0x01 用法
 ```shell
 reaper -h
   -l string
@@ -14,7 +14,7 @@ reaper -h
         并发数 (default 100)
 ```
 
-#### 0x03 reaper.json数据格式说明
+#### 0x02 reaper.json数据格式说明
 ```shell
 {
     "fp": "fingerprint-name",  // 匹配指纹名
@@ -45,4 +45,12 @@ icon的匹配逻辑是"或"，其余项的匹配逻辑是"与"，整体的匹配
 ```
 icon只需满足其中之一则icon为true，若再次满足title条件，则title为true，最终结果为：icon && title --> fp-name
 
+#### 0x03 前人栽树、后人乘凉
+本项目最初是用的python进行开发，后由于效率问题，在学习了一点go语法后对项目进行了快速重构
+其中多线程的写法使用了作者 @shihuang 的开源项目Ehole中的写法，指纹数据提取于各大开源指纹库中的数据，目前已提取近30000条指纹数据，后续将会继续追加
+如有疑问或对代码优化建议，希望不吝赐教，欢迎提交issues
 
+#### 0x04 鸣谢
+[EHole(棱洞)3.0 重构版]: https://github.com/EdgeSecurityTeam/EHole
+
+本项目指纹数据源于以下开源项目：
