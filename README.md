@@ -67,6 +67,7 @@ icon只需满足其中之一则icon为true，若再次满足title条件，则tit
 [ObserverWard](https://github.com/0x727/ObserverWard)  
 [wappalyzergo](https://github.com/projectdiscovery/wappalyzergo)  
 [whatscan](https://github.com/killmonday/whatscan)  
+[EHole](https://github.com/EdgeSecurityTeam/EHole)  
 
 作者 @r0eXpeR 收集了各种工具中的指纹数据  
 [fingerprint](https://github.com/r0eXpeR/fingerprint)  
