@@ -50,7 +50,7 @@ icon只需满足其中之一则icon为true，若再次满足title条件，则tit
 其中多线程的写法使用了作者 @shihuang 的开源项目Ehole中的写法，指纹数据提取于各大开源指纹库中的数据，目前已提取近30000条指纹数据，后续将会继续追加
 如有疑问或对代码优化建议，希望不吝赐教，欢迎提交issues
 
-#### 0x04 鸣谢
-[EHole(棱洞)3.0 重构版]: https://github.com/EdgeSecurityTeam/EHole
+#### 0x04 特别鸣谢
+[EHole(棱洞)3.0 重构版](https://github.com/EdgeSecurityTeam/EHole)
 
 本项目指纹数据源于以下开源项目：
