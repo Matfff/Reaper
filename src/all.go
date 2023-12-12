@@ -165,7 +165,7 @@ func writeToBuffer(data string) {
 
 func WriteFile() {
 	// 打开文件，使用 os.O_APPEND 模式打开，表示在文件末尾追加内容
-	file, err := os.OpenFile("result.csv", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	file, err := os.OpenFile(Output, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
 	if err != nil {
 		// fmt.Println("Error opening file:", err)
 		return
