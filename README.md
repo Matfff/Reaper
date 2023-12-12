@@ -53,14 +53,14 @@ icon只需满足其中之一则icon为true，若再次满足title条件，则tit
 #### 0x04 特别鸣谢
 [EHole(棱洞)3.0 重构版](https://github.com/EdgeSecurityTeam/EHole)
 
-本项目指纹数据源于以下开源项目：
-[dismap](https://github.com/zhzyker/dismap)
-[cmsprint](https://github.com/Lucifer1993/cmsprint)
-[FingerprintHub](https://github.com/0x727/FingerprintHub)
-[Goby](https://github.com/gobysec/GobyVuls)
-[ObserverWard](https://github.com/0x727/ObserverWard)
-[wappalyzergo](https://github.com/projectdiscovery/wappalyzergo)
-[whatscan](https://github.com/killmonday/whatscan)
+本项目指纹数据源于以下开源项目：  
+[dismap](https://github.com/zhzyker/dismap)  
+[cmsprint](https://github.com/Lucifer1993/cmsprint)  
+[FingerprintHub](https://github.com/0x727/FingerprintHub)  
+[Goby](https://github.com/gobysec/GobyVuls)  
+[ObserverWard](https://github.com/0x727/ObserverWard)  
+[wappalyzergo](https://github.com/projectdiscovery/wappalyzergo)  
+[whatscan](https://github.com/killmonday/whatscan)  
 
-作者 @r0eXpeR 收集了各种工具中的指纹数据
-[fingerprint](https://github.com/r0eXpeR/fingerprint)
+作者 @r0eXpeR 收集了各种工具中的指纹数据  
+[fingerprint](https://github.com/r0eXpeR/fingerprint)  
