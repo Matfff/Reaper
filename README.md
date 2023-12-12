@@ -14,6 +14,9 @@ reaper -h
         并发数 (default 100)
 ```
 
+![image](https://github.com/xxxxfang/Reaper/assets/86756456/bd37d09f-88d7-472a-b2cd-c28f06f18332)
+
+
 #### 0x02 reaper.json数据格式说明
 ```shell
 {
