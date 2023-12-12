@@ -4,6 +4,8 @@
 Reaper是一款基于go语言开发的指纹扫描器，可以对响应数据中的headers、body、mmh3-icon、md5-icon、js、title进行扫描识别，擅长于对大量数据进行批量扫描，经过测试可以很好的完成百万级别数据量的指纹扫描。reaper.json中有近30000条指纹数据。
 
 #### 0x01 用法
+下载最新版的可执行文件：[Reaper](https://github.com/xxxxfang/Reaper/releases)  
+
 ```shell
 reaper -h
   -l string
