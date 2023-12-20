@@ -28,6 +28,13 @@ func read_json() []Fingerprint {
 	// 读取 JSON 文件
 	filePath := "reaper.json"
 
+	// 检查文件是否存在
+	_, err := os.Stat(filePath)
+	if os.IsNotExist(err) {
+		fmt.Println()
+		os.Exit(1)
+	}
+
 	file, err := os.Open(filePath)
 	if err != nil {
 		fmt.Println("Error opening reaper.json: ", err)
