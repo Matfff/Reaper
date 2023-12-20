@@ -11,20 +11,6 @@ import (
 	"sync"
 )
 
-type Fingerprint struct {
-	Fp      string   `json:"fp"`
-	Headers []string `json:"headers"`
-	Body    []string `json:"body"`
-	Icon    []string `json:"icon"`
-	JS      []string `json:"js"`
-	Title   []string `json:"title"`
-	Regexp  string   `json:"regexp"`
-}
-
-type Data struct {
-	Fingerprints []Fingerprint `json:"fingerprints"`
-}
-
 var (
 	Buffer      = make(chan string, 2048) // 全局缓冲区
 	BufferMutex sync.Mutex                // 用于保护缓冲区的互斥锁
@@ -44,7 +30,7 @@ func read_json() []Fingerprint {
 
 	file, err := os.Open(filePath)
 	if err != nil {
-		fmt.Println("Error opening file:", err)
+		fmt.Println("Error opening reaper.json: ", err)
 		return nil
 	}
 	defer file.Close()
