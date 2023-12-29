@@ -79,7 +79,7 @@ If you have any questions or suggestions for optimizing the code, please feel fr
 
 
 
-#### 0x04 Special thanks
+#### 0x04 Reference
 
 [EHole(棱洞)3.0 重构版](https://github.com/EdgeSecurityTeam/EHole)
 
