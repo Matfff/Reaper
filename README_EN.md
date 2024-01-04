@@ -74,11 +74,11 @@ If the icon only needs to satisfy one of them, the icon will be true. If the tit
 
 #### 0x03 How to use ProxyPool
 
-![image-20240104161419388](C:\Users\fang\AppData\Roaming\Typora\typora-user-images\image-20240104161419388.png)
+![image](https://github.com/xxxxfang/Reaper/assets/86756456/5c4578bd-cc62-45aa-846c-b167e95cf148)
 
 
+![image](https://github.com/xxxxfang/Reaper/assets/86756456/75da86fd-e6a3-48d0-a231-74a6450735e6)
 
-![image-20240104161426974](C:\Users\fang\AppData\Roaming\Typora\typora-user-images\image-20240104161426974.png)
 
 
 
