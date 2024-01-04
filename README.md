@@ -27,7 +27,7 @@ reaper -h
   -t int
         并发数 (default 100)
   -p string
-  		ip代理池
+  		  ip代理池
 ```
 
 ![image](https://github.com/xxxxfang/Reaper/assets/86756456/bd37d09f-88d7-472a-b2cd-c28f06f18332)  
@@ -69,11 +69,10 @@ icon只需满足其中之一则icon为true，若再次满足title条件，则tit
 
 #### 0x03 IP代理池使用
 
-![image-20240104160432147](C:\Users\fang\AppData\Roaming\Typora\typora-user-images\image-20240104160432147.png)
+![image](https://github.com/xxxxfang/Reaper/assets/86756456/4e02096b-7f52-4c86-9c8c-5704cfd720b0)
 
+![image](https://github.com/xxxxfang/Reaper/assets/86756456/1f9e1566-e4d1-4dcd-b441-0c6288036343)
 
-
-![image-20240104160655755](C:\Users\fang\AppData\Roaming\Typora\typora-user-images\image-20240104160655755.png)
 
 
 
