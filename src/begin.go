@@ -12,16 +12,18 @@ import (
 )
 
 var (
-	Buffer      = make(chan string, 2048) // 全局缓冲区
-	BufferMutex sync.Mutex                // 用于保护缓冲区的互斥锁
-	IsFlush     bool                      // 手动执行flush
-	Fps         []Fingerprint             // 指纹数组
-	Thread      int                       // 最大线并发数
-	jsJump      int                       // js最大跳转次数
-	List        string                    // 扫描的目标URL/主机列表的文件路径（一行一个）
-	Output      string                    // 输出结果（csv格式）
-	Wg          sync.WaitGroup
-	UrlQueue    *queue.Queue
+	Buffer        = make(chan string, 2048) // 全局缓冲区
+	BufferMutex   sync.Mutex                // 用于保护缓冲区的互斥锁
+	IsFlush       bool                      // 手动执行flush
+	Fps           []Fingerprint             // 指纹数组
+	Thread        int                       // 最大线并发数
+	jsJump        int                       // js最大跳转次数
+	HttpProxyPool string                    // HTTP ip代理池
+	List          string                    // 扫描的目标URL/主机列表的文件路径（一行一个）
+	Output        string                    // 输出结果（csv格式）
+	Wg            sync.WaitGroup
+	UrlQueue      *queue.Queue
+	ProxyQueue    *queue.Queue
 )
 
 func read_json() []Fingerprint {
@@ -116,7 +118,12 @@ func Begin() {
 	flag.IntVar(&Thread, "t", 100, "并发数")
 	flag.StringVar(&List, "l", "", "扫描的目标URL/主机列表的文件路径(一行一个)")
 	flag.StringVar(&Output, "o", "result.csv", "输出结果(csv格式)")
+	flag.StringVar(&HttpProxyPool, "p", "", "ip代理")
 	flag.Parse()
+
+	if HttpProxyPool != "" {
+		ProxyQueue = queue.NewQueue()
+	}
 
 	// 检查必填参数是否已设置
 	if List == "" {

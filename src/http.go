@@ -138,8 +138,23 @@ func Http(urlstring string) {
 		TLSClientConfig 字段用于配置 HTTPS 连接的 TLS 客户端配置
 		InsecureSkipVerify 被设置为 true。这个选项的作用是，它允许客户端跳过对服务端证书的验证。
 	*/
-	transport := &http.Transport{
-		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	var transport *http.Transport
+	if HttpProxyPool != "" {
+		proxy := "http://" + GetProxy()
+		proxyParsed, err := url.Parse(proxy)
+		if err != nil {
+			fmt.Println("Error parsing proxy URL:", err)
+			return
+		}
+
+		transport = &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			Proxy:           http.ProxyURL(proxyParsed), // 使用转换后的 *url.URL 类型
+		}
+	} else {
+		transport = &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		}
 	}
 
 	// 创建一个 http 客户端，并设置不跟随重定向

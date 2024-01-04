@@ -26,6 +26,8 @@ reaper -h
         输出结果(csv格式) (default "result.csv")
   -t int
         并发数 (default 100)
+  -p string
+  		ip代理池
 ```
 
 ![image](https://github.com/xxxxfang/Reaper/assets/86756456/bd37d09f-88d7-472a-b2cd-c28f06f18332)  
@@ -63,11 +65,23 @@ icon的匹配逻辑是"或"，其余项的匹配逻辑是"与"，整体的匹配
 ```
 icon只需满足其中之一则icon为true，若再次满足title条件，则title为true，最终结果为：icon && title --> fp-name
 
-#### 0x03 前人栽树、后人乘凉
+
+
+#### 0x03 IP代理池使用
+
+![image-20240104160432147](C:\Users\fang\AppData\Roaming\Typora\typora-user-images\image-20240104160432147.png)
+
+
+
+![image-20240104160655755](C:\Users\fang\AppData\Roaming\Typora\typora-user-images\image-20240104160655755.png)
+
+
+
+#### 0x04 前人栽树、后人乘凉
 指纹数据提取于各大开源指纹库中的数据，目前已提取近30000条指纹数据，后续将会继续追加。  
 如有疑问或对代码有优化建议，希望不吝赐教，欢迎提交issues
 
-#### 0x04 参考
+#### 0x05 参考
 [EHole(棱洞)3.0 重构版](https://github.com/EdgeSecurityTeam/EHole)
 
 本项目指纹数据源于以下开源项目：  
