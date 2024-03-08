@@ -82,14 +82,9 @@ If the icon only needs to satisfy one of them, the icon will be true. If the tit
 
 
 
-#### 0x04 The predecessors planted trees, and the descendants enjoy the shade
+#### 0x05 Reference
 
 Fingerprint data is extracted from data in major open source fingerprint databases. Currently, nearly 30,000 pieces of fingerprint data have been extracted, and more will be added in the future.
-If you have any questions or suggestions for optimizing the code, please feel free to give me some advice. You are welcome to submit issues.
-
-
-
-#### 0x05 Reference
 
 [EHole(棱洞)3.0 重构版](https://github.com/EdgeSecurityTeam/EHole)
 
