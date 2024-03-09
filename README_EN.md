@@ -12,7 +12,7 @@
 
 #### 0x00 Introduction
 
-Reaper is a fingerprint scanner developed based on the Go language. It can scan and identify headers, body, mmh3-icon, md5-icon, js, and title in the response data. It is good at batch scanning of large amounts of data. After testing, it can Very good at completing fingerprint scanning of millions of data volumes. There are nearly 30,000 fingerprint data in reaper.json.
+Reaper is a fingerprint scanner developed based on the Go language. It can scan and identify headers, body, mmh3-icon, md5-icon, js, and title in the response data. It is good at batch scanning of large amounts of data. After testing, it can Very good at completing fingerprint scanning of millions of data volumes. There are 32000+ fingerprint data in Aper.json.
 
 Reaper can recognize two encryption types: mmh3-icon and md5-icon. By setting the value of regexp to start whether to use regular rules for rule matching, it can be well compatible with fingerprint data in other fingerprint libraries.
 
